@@ -1,6 +1,6 @@
 package com.marketBasket.marketBasket.controller;
 
-import com.marketBasket.marketBasket.basketList.Basket;
+
 import com.marketBasket.marketBasket.service.BasketServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,7 @@ public class BasketController {
     }
 
     @GetMapping("/add")
-    public List addObject(@RequestParam int code) {
+    public String addObject(@RequestParam int code) {
         return basketService.add(code);
     }
 
