@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface BasketService {
 
-    List add(int code);
+    String add(int code);
 
     Collection<Integer> get();
 }

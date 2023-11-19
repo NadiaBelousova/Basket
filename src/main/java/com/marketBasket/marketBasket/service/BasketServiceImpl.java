@@ -17,9 +17,9 @@ public class BasketServiceImpl implements BasketService {
     }
 
 @Override
-    public List add(int code) {
+    public String  add(int code) {
         basket.add(code);
-        return basket;
+        return "товар успешно добавлен";
     }
     @Override
     public Collection<Integer> get() {
